@@ -3,8 +3,8 @@ const removeFromArray = function(arr, ...nums) {
         //i can access each individual num from nums
 
         let currentNum = nums.shift();
-        if(currentNum !== undefined){
-        arr.splice(arr.indexOf(currentNum), 1);
+        if(currentNum !== undefined && arr.includes(currentNum)){
+                arr.splice(arr.indexOf(currentNum), 1);
         }
     }
     
