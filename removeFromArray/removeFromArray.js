@@ -1,6 +1,6 @@
 const removeFromArray = function(arr, ...nums) {
     // debugger; [1, 2, 3]
-    for( let counter = nums.length;counter > 0  ;counter --) {
+    for( let counter = nums.length; counter > 0  ;counter --) {
         let currentNum = nums.shift();
         if(currentNum !== undefined && arr.includes(currentNum)){
                 arr.splice(arr.indexOf(currentNum), 1);
