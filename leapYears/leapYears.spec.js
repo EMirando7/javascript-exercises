@@ -4,7 +4,7 @@ describe('leapYears', function() {
   it('works with non century years', function() {
     expect(leapYears(1996)).toEqual(true);
   });
-  xit('works with non century years', function() {
+  it('works with non century years', function() {
     expect(leapYears(1997)).toEqual(false);
   });
   xit('works with ridiculously futuristic non century years', function() {
