@@ -1,8 +1,7 @@
 const sumAll = function(num1, num2) {
-    debugger;
     let counter = num1;
     let newNum = num1;
-    if(num1 < 0 || num2 < 0){
+    if(num1 < 0 || num2 < 0 || typeof(num1) !== 'number' || typeof(num2) !== 'number' ){
         return 'ERROR'
     }
     if(num1 < num2){
@@ -18,5 +17,5 @@ const sumAll = function(num1, num2) {
     }
     return newNum;
 }
-sumAll(123,1)
+
 module.exports = sumAll
